@@ -10,12 +10,7 @@ gem "rails", "~> 7.0.4"
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
-group :development do
-  gem "sqlite3"
-end
-group :production do
-  gem "pg"
-end
+gem "sqlite3", "~> 1.4"
 gem "carrierwave"
 gem "mini_magick"
 
@@ -78,9 +73,3 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-
-gem "dockerfile-rails", ">= 1.5", :group => :development
-
-gem "sentry-ruby", "~> 5.11"
-
-gem "sentry-rails", "~> 5.11"
