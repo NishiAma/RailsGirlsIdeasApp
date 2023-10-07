@@ -95,6 +95,8 @@ GEM
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     diff-lcs (1.5.0)
+    dockerfile-rails (1.5.10)
+      rails (>= 3.0.0)
     erubi (1.12.0)
     ffi (1.16.3)
     globalid (1.2.1)
@@ -212,6 +214,11 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sentry-rails (5.11.0)
+      railties (>= 5.0)
+      sentry-ruby (~> 5.11.0)
+    sentry-ruby (5.11.0)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -261,6 +268,7 @@ DEPENDENCIES
   capybara
   carrierwave
   debug
+  dockerfile-rails (>= 1.5)
   importmap-rails
   jbuilder
   mini_magick
@@ -270,6 +278,8 @@ DEPENDENCIES
   redis (~> 4.0)
   rspec-rails
   selenium-webdriver
+  sentry-rails (~> 5.11)
+  sentry-ruby (~> 5.11)
   sprockets-rails
   sqlite3
   stimulus-rails
